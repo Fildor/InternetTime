@@ -1,14 +1,14 @@
 # InternetTime
 
-Just a fun little project to play around with different 
+Just a fun little project to play around with different
 programming languages.
 
-Each sub-project is tasked with simply printing the current 
+Each sub-project is tasked with simply printing the current
 Internet Time (aka "Swatch .Beats") to StdOut.
 
 ## Internet Time
 
-Internet Time devides the day into 1000 beats and always 
+Internet Time devides the day into 1000 beats and always
 refers to Biel Mean Time, which is UTC+01:00 without daylight
 savings.
 
@@ -17,7 +17,7 @@ modulo by 24 hours and devide by 86.4.
 
 ## Sub Projects
 
-Currently, there are projects in 
+Currently, there are projects in
 
 - C
 - C#/NET Core 3.1
@@ -26,6 +26,7 @@ Currently, there are projects in
 - Rust
 - Go
 - Lua
+- POSIX Shell Script
 
 and I would be happy to add more to the list.
 
@@ -33,7 +34,7 @@ and I would be happy to add more to the list.
 
 What am I doing this for? - Well, long story short:
 I wanted Internet Time in my i3blocks, so I wrote it.
-Then I thought: "Why not do this in as many languages 
+Then I thought: "Why not do this in as many languages
 as I possibly can?" and here we are.
 
 Meanwhile, I also used those in PolyBar and Conky.
