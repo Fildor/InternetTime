@@ -27,6 +27,7 @@ Currently, there are projects in
 - Go
 - Lua
 - POSIX Shell Script
+- Fish Shell Script
 
 and I would be happy to add more to the list.
 
