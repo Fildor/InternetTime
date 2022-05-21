@@ -8,7 +8,7 @@ Internet Time (aka "Swatch .Beats") to StdOut.
 
 ## Internet Time
 
-Internet Time devides the day into 1000 beats and always
+Internet Time devides the day into 1000 "beats" and always
 refers to Biel Mean Time, which is UTC+01:00 without daylight
 savings.
 
