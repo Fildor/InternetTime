@@ -29,6 +29,26 @@ interval=5
 
 ### Polybar
 
-1. Projekt im Release Modus bauen: `cargo build --release`
-2. Executable ins Polybar scripts VZ kopieren.
-3. Dort entsprechendes Modul definieren.
+1. Build project in Release mode: `cargo build --release`
+2. Copy executable to ~/.config/polybar/scripts/
+   `cp ./target/release/inet_time ~/.config/polybar/scripts/beats`
+3. Add a custom module (change to your liking)
+
+```
+[module/beats]
+type = custom/script
+exec = ~/.config/polybar/scripts/<executable name>
+interval = 5
+label = .Beats: %output%
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-prefix = ""
+format-prefix-foreground = #FFBB00
+format-underline = #FFBB00
+```
+
+4. In the section about your WM add "beats" (or whatever you called it) to the line
+```
+modules-right = pavolume memory2 cpu2 date beats
+```
+or `modules-center` or `modules-left` - wherever you want it.

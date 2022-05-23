@@ -30,4 +30,24 @@ interval=5
 ```
 
 ### Polybar
-TBD
+1. Copy executable to ~/.config/polybar/scripts/
+2. Add a custom module (change to your liking)
+
+```
+[module/beats]
+type = custom/script
+exec = ~/.config/polybar/scripts/<executable name>
+interval = 5
+label = .Beats: %output%
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-prefix = ""
+format-prefix-foreground = #FFBB00
+format-underline = #FFBB00
+```
+
+3. In the section about your WM add "beats" to the line
+```
+modules-right = pavolume memory2 cpu2 date beats
+```
+or `modules-center` or `modules-left` - wherever you want it.
