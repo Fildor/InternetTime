@@ -3,14 +3,14 @@ fn main() {
 }
 
 // inet time conversion
-const SECONDS_TO_BEATS_FATCOR : f64 = 86.4;
+const SECONDS_TO_BEATS_FACTOR : f64 = 86.4;
 
 fn get_beats(utctime: &time::Tm) -> f64 {
     let mut value : f64 = 0.0;
     value += f64::from(utctime.tm_sec);
     value += f64::from(utctime.tm_min * 60);
     value += f64::from(((utctime.tm_hour + 1) %24) * 3600);
-    return value / SECONDS_TO_BEATS_FATCOR;
+    return value / SECONDS_TO_BEATS_FACTOR;
 }
 
 #[cfg(test)]
