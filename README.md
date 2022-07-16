@@ -46,3 +46,8 @@ For what *you* may use it is up to you.
 
 This code is far from being rocket science and _anyone_ could have
 come up with it (or better versions). So: Do as you please with it.
+
+## Code of conduct
+- No compelled speech
+- No politics, no religion
+- Don't be an A**
