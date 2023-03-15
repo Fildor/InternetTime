@@ -2,7 +2,6 @@ fn main() {
     print!("@{:.1}", get_beats(&time::now_utc()));
 }
 
-// inet time conversion
 const SECONDS_TO_BEATS_FACTOR : f64 = 86.4;
 
 fn get_beats(utctime: &time::Tm) -> f64 {

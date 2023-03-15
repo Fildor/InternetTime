@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 namespace InternetTime
@@ -14,7 +14,7 @@ namespace InternetTime
         private static double GetInternetTime()
         {
             DateTimeOffset now = DateTimeOffset.UtcNow;
-            return ((((now.Hour + 1) % 24) * 3600) + (now.Minute * 60) + (now.Second)) / 86.4;
+            return ((now.ToUnixTimeSeconds() + 3600) % (24 * 3600)) / 86.4;
         }
     }
 }
