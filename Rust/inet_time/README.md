@@ -1,7 +1,8 @@
 # InetTime in Rust
 
 Gibt die aktuelle Uhrzeit in Swatch-Beats aus.
-D.h. BMT in 1000stel Anteile von 24h ab 00:00
+D.h. BMT (Biel Mean Time = UTC +01:00 ohne Sommerzeit) in 1000stel Anteilen von 
+24h ab 00:00 Uhr.
 
 ## Umrechnung
 
@@ -15,7 +16,7 @@ $.beats = ((secondsOfDayInUTC + 01:00) MOD 24h) / 86.4$
 
 1. Projekt im Release Modus bauen: `cargo build --release`
 2. Im VZ ./target/release die Exe "inet_time" umbenennen in "beats".
-   `cp ./target/release/inet_time ./target/release/beats`
+   `mv ./target/release/inet_time ./target/release/beats`
 3. "beats" kopieren: `cp ./target/realease/beats ~/.config/i3blocks`
 4. Dort Block hinzufügen:
 
@@ -47,7 +48,8 @@ format-prefix-foreground = #FFBB00
 format-underline = #FFBB00
 ```
 
-4. In the section about your WM add "beats" (or whatever you called it) to the line
+4. In the section about your WM add "beats" (or whatever you called it) to the 
+   line ...
 ```
 modules-right = pavolume memory2 cpu2 date beats
 ```
