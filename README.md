@@ -28,6 +28,7 @@ Currently, there are projects in
 - Lua
 - POSIX Shell Script
 - Fish Shell Script
+- Zig
 
 and I would be happy to add more to the list.
 
