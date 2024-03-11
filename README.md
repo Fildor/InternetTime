@@ -34,7 +34,10 @@ and I would be happy to add more to the list.
 
 ## Roadmap
 
-- Add Zig
+- Improve current implementations
+- Improve READMEs
+- Add Languages
+- Add Install-Scripts (?)
 
 ## Usage
 
