@@ -6,15 +6,13 @@ import (
 )
 
 func main() {
-	fmt.Printf("@%3.1f", getInternetTime())
+	fmt.Printf("@%3.1f", getInternetTimeV2())
 }
 
-func getInternetTime() float64 {
+func getInternetTimeV2() float64 {
 	var utcTime = time.Now().UTC()
-	var result float64 = 0.0
-	result += float64((utcTime.Hour()+1)%24) * 3600.0
-	result += float64(utcTime.Minute()) * 60.0
-	result += float64(utcTime.Second())
-	result /= 86.4
-	return result
+	hour, min, sec := utcTime.Add(time.Hour).Clock()
+	return (float64(hour%24)*3600.0 +
+		float64(min*60.0) +
+		float64(sec)) / 86.4
 }
