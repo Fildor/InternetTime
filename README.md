@@ -32,6 +32,10 @@ Currently, there are projects in
 
 and I would be happy to add more to the list.
 
+## Roadmap
+
+- Add Zig
+
 ## Usage
 
 What am I doing this for? - Well, long story short:
