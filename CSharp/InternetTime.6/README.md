@@ -1,6 +1,6 @@
 # Internet Time in C# / .Net 6
 
-This program output the current Internet Time to STD_OUT.
+This program will output the current Internet Time to STD_OUT.
 
 ## What _is_ Internet Time?
 

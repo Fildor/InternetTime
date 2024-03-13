@@ -4,3 +4,7 @@ tasks:
   build:
     cmds:
       - go build -o ./bin/beats ./src/main.go
+  clean:
+    cmds:
+      - go clean
+      - rm -rf ./bin

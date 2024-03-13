@@ -15,10 +15,10 @@ $.beats = ((secondsOfDayInUTC + 01:00) MOD 24h) / 86.4$
 ### i3-blocks
 
 1. Projekt im Release Modus bauen: `cargo build --release`
-2. Im VZ ./target/release die Exe "inet_time" umbenennen in "beats".
-   `mv ./target/release/inet_time ./target/release/beats`
-3. "beats" kopieren: `cp ./target/realease/beats ~/.config/i3blocks`
-4. Dort Block hinzufügen:
+2. Aus dem Verzeichnis ./target/release die ausführbare Datei "inet_time" kopieren
+   und umbenennen: `cp ./target/realease/inet_time ~/.config/i3blocks/beats` oder
+   einen Link erstellen: `ln -s ./target/release/inet_time $HOME/.config/i3blocks/beats`
+3. Dort Block hinzufügen:
 
 ```
 #internet time
@@ -54,3 +54,7 @@ format-underline = #FFBB00
 modules-right = pavolume memory2 cpu2 date beats
 ```
 or `modules-center` or `modules-left` - wherever you want it.
+
+### As notification
+Given you copy or link the executable to your .local/bin:
+`notify-send "@beats" $(~/.local/bin/beats)`
