@@ -6,13 +6,13 @@ programming languages.
 Each sub-project is tasked with simply printing the current
 Internet Time (aka "Swatch .Beats") to StdOut.
 
-## Internet Time
+## Internet Time a.k.a Swatch Beats
 
 Internet Time devides the day into 1000 "beats" and always
 refers to Biel Mean Time, which is UTC+01:00 without daylight
 savings.
 
-Its value is computed by taking the utc day's seconds, add one hour,
+Its value is computed by taking the utc day's total seconds, add one hour,
 modulo by 24 hours and devide by 86.4.
 
 ## Sub Projects

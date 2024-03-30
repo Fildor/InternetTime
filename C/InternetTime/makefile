@@ -1,5 +1,5 @@
 beats: ./src/main.c
-	gcc ./src/main.c -o ./bin/internettime -lm
+	gcc ./src/main.c -o ./bin/beats -lm
 
 all: beats
 
